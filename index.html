@@ -1,85 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Визитка</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <script src="libs/rain.js" defer></script>
 </head>
 <body>
-    <header class="main-header">
-        <nav>
-            <ul>
-                <li><a href="#hero">Главная</a></li>
-                <li><a href="#about">Обо мне</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
+  <section id="section1" class="layers"></section>
+  <div class="layers__container">
+    <div class="layers__item layer-1" style="background-image: url(img/layer-1.jpg);"></div>
+    <div class="layers__item layer-2" style="background-image: url(img/layer-2.png);"></div>
+    <div class="layers__item layer-3">
+      <div class="hero-content">
+        <h1>Kurilionak Ivan studio</h1>
+        <div class="hero-content__p">Создание современных сайтов эффективно</div>
+        <button onclick="scrollToSection('section2')" class="button-start">Поехали!</button>
+      </div>
+    </div>
+    <div class="layers__item layer-4"></div>
+    <div class="layers__item layer-5" style="background-image: url(img/layer-5.png);"></div>
+    <div class="layers__item layer-6" style="background-image: url(img/layer-6.png);"></div>
+  </div>
 
-    <section id="hero" class="hero">
-        <div class="hero-content">
-            <h1>Привет! Я веб-разработчик</h1>
-            <h2>Меня зовут Иван и я создаю современные веб-приложения</h2>
-            <p>Я занимаюсь разработкой веб-сайтов и веб-приложений с 2024 года. Мой опыт позволяет мне создавать эффективные и красивые решения для бизнеса любого размера.</p>
-            <a href="#contact" class="btn">Связаться со мной</a>
-        </div>
-    </section>
+  <section id="section2" class="Achivments">
+    <h2 class="achievements-title">Мои достижения</h2>
+    <div class="Achivments__container">
+      <div class="achivments__item box-1">
+        <h2>Статистика заказов</h2>
+        <p>За свою карьеру Курилёнок Иваном было выполнено 0 заказов от работодателей. Это на целых 89% больше, чем у разработчиков с таким же стажем!</p>
+      </div>
+      <div class="achivments__item box-2">
+        <h2>Статистика развития</h2>
+        <p>Курилёнок Иван тратит на развитие своих навыков веб программирования в среднем меньше одного часа в день. Это позволяет ему оставаться в форме постоянно!</p>
+      </div>
+      <div class="achivments__item box-3">
+        <h2>Статистика по хобби</h2>
+        <p>Курилёнок Иван позволяет себе ежедневный просмотр аниме и фильмов в течение 3 часов. Это позволяет ему быть в курсе о всех новинках, а также быть в тренде!</p>
+      </div>
+      <div class="achivments__item box-4">
+        <h2>Общение с клиентами</h2>
+        <p>Курилёнок Иван ежедневно общается с клиентами на различных языках и в различных стилях. Это позволяет ему на 100% лучше понимать, чего хочет клиент!</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="about" class="about">
-        <h2>Обо мне</h2>
-        <p>Я опытный веб-разработчик, специализирующийся на создании современных, функциональных и привлекательных веб-сайтов и веб-приложений. Моя основная цель - помочь вашему бизнесу достичь успеха в интернете. Я использую новейшие технологии и передовые методики, чтобы обеспечить высокую производительность, масштабируемость и удобство пользования для ваших клиентов.</p>
-        <a href="#services" class="btn">Узнать больше</a>
-    </section>
+  <section id="section3" class="Technologies">
+    <h2 class="technologies-title">Технологии, которыми я владею</h2>
+    <div class="Technologies__container">
+      <div class="technology__item">
+        <img src="img/html5.png" alt="HTML5">
+        <h3>HTML5</h3>
+        <p>HTML5 - это язык разметки, используемый для создания и структурирования веб-страниц. Он поддерживает мультимедийные элементы и новые семантические теги.</p>
+      </div>
+      <div class="technology__item">
+        <img src="img/css3.png" alt="CSS3">
+        <h3>CSS3</h3>
+        <p>CSS3 - это язык стилей, используемый для описания внешнего вида и форматирования веб-страниц. Он поддерживает анимации, трансформации и гибкие макеты.</p>
+      </div>
+      <div class="technology__item">
+        <img src="img/javascript.png" alt="JavaScript">
+        <h3>JavaScript</h3>
+        <p>JavaScript - это язык программирования, используемый для создания интерактивных и динамических веб-страниц. Он поддерживает работу с DOM, событиями и AJAX.</p>
+      </div>
+      <div class="technology__item">
+        <img src="img/react.png" alt="React">
+        <h3>React</h3>
+        <p>React - это библиотека JavaScript для создания пользовательских интерфейсов. Она позволяет создавать компоненты и управлять состоянием приложения.</p>
+      </div>
+      <div class="technology__item">
+        <img src="img/nodejs.png" alt="Node.js">
+        <h3>Node.js</h3>
+        <p>Node.js - это среда выполнения JavaScript на сервере. Она позволяет создавать серверные приложения и работать с базами данных.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="services" class="services">
-        <h2>Мои услуги</h2>
-        <div class="service-list">
-            <div class="service-item">
-                <h3>Веб-разработка</h3>
-                <p>Создание современных и адаптивных веб-сайтов и веб-приложений с использованием новейших технологий.</p>
-            </div>
-            <div class="service-item">
-                <h3>Дизайн интерфейсов</h3>
-                <p>Разработка привлекательных и интуитивно понятных пользовательских интерфейсов.</p>
-            </div>
-            <div class="service-item">
-                <h3>Оптимизация производительности</h3>
-                <p>Повышение скорости загрузки и эффективности ваших веб-решений.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="portfolio" class="portfolio">
-        <h2>Портфолио</h2>
-        <div class="portfolio-list">
-            <div class="portfolio-item">
-                <img src="1.png" alt="Project 1">
-                
-            </div>
-            <div class="portfolio-item">
-                <img src="2.png" alt="Project 2">
-                
-            </div>
-            <div class="portfolio-item">
-                <img src="3.png" alt="Project 3">
-                
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Контакты</h2>
-        <form action="#" method="post">
-            <label for="name">Имя</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Сообщение</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit" class="btn">Отправить</button>
-        </form>
-    </section>
 </body>
 </html>
