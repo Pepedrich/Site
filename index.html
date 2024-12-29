@@ -6,9 +6,26 @@
   <title>Визитка</title>
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
-  <script src="libs/rain.js" defer></script>
 </head>
 <body>
+
+    
+  <nav class="navbar">
+    <div class="container">
+        <div class="navbar__toggle" id="navbarToggle">
+            <span class="navbar__toggle-icon"></span>
+            <span class="navbar__toggle-icon"></span>
+            <span class="navbar__toggle-icon"></span>
+        </div>
+        <div class="navbar__menu" id="navbarMenu">
+            <a href="#section1" class="navbar__item">Главная</a>
+            <a href="#section2" class="navbar__item">Мои достижения</a>
+            <a href="#section3" class="navbar__item">Технологии</a>
+        </div>
+    </div>
+</nav>
+
+
   <section id="section1" class="layers"></section>
   <div class="layers__container">
     <div class="layers__item layer-1" style="background-image: url(img/layer-1.jpg);"></div>
@@ -78,5 +95,22 @@
     </div>
   </section>
 
+
+  <section id="feedback" class="Feedback">
+    <h2>Обратная связь</h2>
+    <form action="https://getform.io/f/bmddoyna" method="POST" class="feedback-form">
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Сообщение:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+  
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+  
 </body>
 </html>

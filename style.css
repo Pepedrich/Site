@@ -23,6 +23,77 @@ body{
   font-family: kamerik-3d;
   margin: 0;
 }
+
+.navbar {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar__menu {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar__item {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.navbar__item:hover {
+  text-decoration: underline;
+}
+
+.navbar__toggle {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.navbar__toggle-icon {
+  width: 25px;
+  height: 2px;
+  background-color: white;
+}
+
+
+@media (max-width: 800px) {
+  .navbar__menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+  }
+
+  .navbar__item {
+      padding: 10px; 
+      text-align: center;
+  }
+
+  .navbar__toggle {
+      display: flex;
+  }
+
+  .navbar__menu--active {
+      display: flex;
+  }
+}
+
+
 .layers {
   perspective: 1000px;
   overflow-x: hidden;
@@ -199,4 +270,58 @@ transition: transform var(--transition);
       } 
     }
 
-
+    .Feedback {
+      background-color: #333; /* Цвет фона секции */
+      color: #fff; /* Цвет текста */
+      font-family: kamerik-3d, sans-serif; /* Шрифт, использованный на сайте */
+      padding: 40px 20px; /* Внутренние отступы */
+      text-align: center; /* Выравнивание текста по центру */
+    }
+    
+    .feedback-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin: 0 auto;
+      max-width: 500px; /* Максимальная ширина формы */
+      background-color: #6a746a; /* Цвет фона формы */
+      border-radius: 10px; /* Закругленные углы */
+      padding: 20px; /* Внутренние отступы формы */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень формы */
+    }
+    
+    .feedback-form label {
+      font-size: 1.2em; /* Размер шрифта меток */
+      margin-bottom: 5px;
+    }
+    
+    .feedback-form input, .feedback-form textarea {
+      width: 100%; /* Ширина полей ввода */
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: merriweather-italic-3d, sans-serif; /* Используемый шрифт */
+    }
+    
+    .feedback-form button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #333;
+      cursor: pointer;
+    }
+    
+    .feedback-form button:hover {
+      background-color: #ccc;
+    }
+    
+    /* Переходная секция */
+    .transition-section {
+      background-color: #444;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+    
